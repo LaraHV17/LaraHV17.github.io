@@ -1,8 +1,8 @@
 #principal {
     font-family: fantasy;
     width: 160px;
-    background-color: rgb(230, 222, 236);
-    border: rgb(205, 170, 240) 2px solid;
+    background-color: rgb(242, 219, 234);
+    border: rgb(198, 102, 156) 2px solid;
     border-radius: 4px;
     padding: 5px;
     /* Separa al div de la línea con la que hemos rodeado el div (nos da espacio hacia dentro) */

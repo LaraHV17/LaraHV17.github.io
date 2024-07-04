@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
+    <title>¿Cuánto duraremos juntos?</title>
     <link rel="stylesheet" href="style.css">
-    <script src="calculadoraIMC.js"></script>
+    <script src="añosJUNTOS.js"></script>
 </head>
 
 <body>
@@ -15,13 +15,13 @@
             <input type="text" name="" id="iNombre" placeholder="Nombre">
         </div>
         <div class="contenido">
-            <input type="number" name="" id="iAltura" placeholder="Altura">
+            <input type="number" name="" id="iQuerer" placeholder="¿Cuánto me quieres del 0 al 1000?">
         </div>
         <div class="contenido">
-            <input type="number" name="" id="iPeso" placeholder="Peso">
+            <input type="number" name="" id="iAños" placeholder="¿Desde hace cuánto me conoces?">
         </div>
         <div class="contenido">
-            <button onclick="calcular()">Calcular IMC</button>
+            <button onclick="calcular()">Calcular cuánto duraremos juntos en años</button>
             <!-- Nos llama a la función calcular -- -->
         </div>
         <div id="resultado" class="contenido">
@@ -34,12 +34,12 @@
     function calcular()
     {
         let nombre=document.getElementById("iNombre").value;
-        let altura=document.getElementById("iAltura").value;
-        console.log(altura);
-        let peso=document.getElementById("iPeso").value;
-        console.log(peso);
-        let imc=calcularIMC(peso,altura);
-        console.log(imc);
+        let querer=document.getElementById("iQuerer").value;
+        console.log(querer);
+        let años=document.getElementById("iAños").value;
+        console.log(años);
+        let tiempo=calcularTIEMPO(querer,años);
+        console.log(tiempo);
         document.getElementById("resultado").innerHTML=imc;
     }
 </script>
